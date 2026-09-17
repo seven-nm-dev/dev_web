@@ -28,19 +28,50 @@
 
   <link rel="manifest" href="manifest.json">
 
-  <!-- Жесткое скрытие всех плашек и скриптов Netlify -->
+  <!-- Жесткое скрытие любых плашек, дрейверов и оверлеев Netlify -->
   <style>
     [data-netlify-drawer],
-    #netlify-identity-widget,
+    [id*="netlify"],
+    [class*="netlify"],
     iframe[src*="netlify"],
-    .netlify-drawer-frame,
-    net-lify-drawer {
+    net-lify-drawer,
+    netlify-drawer,
+    #netlify-identity-widget {
       display: none !important;
       visibility: hidden !important;
       opacity: 0 !important;
       pointer-events: none !important;
+      height: 0 !important;
+      width: 0 !important;
+      position: absolute !important;
+      top: -9999px !important;
+      left: -9999px !important;
     }
   </style>
+
+  <!-- Скрипт-блокиратор встраивания элементов Netlify -->
+  <script>
+    const observer = new MutationObserver((mutations) => {
+      for (const mutation of mutations) {
+        for (const node of mutation.addedNodes) {
+          if (node.nodeType === 1) {
+            const tagName = node.tagName.toLowerCase();
+            const id = node.id || '';
+            const className = typeof node.className === 'string' ? node.className : '';
+            if (
+              tagName.includes('netlify') ||
+              id.includes('netlify') ||
+              className.includes('netlify') ||
+              node.hasAttribute('data-netlify-drawer')
+            ) {
+              node.remove();
+            }
+          }
+        }
+      }
+    });
+    observer.observe(document.documentElement, { childList: true, subtree: true });
+  </script>
 </head>
 
 <body style="background-color: #0D0D11;" data-netlify-header="false">
