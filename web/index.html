@@ -16,7 +16,7 @@
   <meta name="keywords"
     content="разработка приложений, Flutter, заказать сайт, Telegram боты, мобильные приложения, NM DEV">
 
-  <!-- Open Graph / Соцсети (Как сайт выглядит при отправке ссылки в WhatsApp/Telegram) -->
+  <!-- Open Graph / Соцсети -->
   <meta property="og:type" content="website">
   <meta property="og:title" content="NM DEV — Студия разработки приложений и сайтов">
   <meta property="og:description" content="Создаем IT-продукты на Flutter: мобильные приложения, сайты и боты.">
@@ -27,9 +27,23 @@
   <link rel="apple-touch-icon" href="icons/Icon-192.png">
 
   <link rel="manifest" href="manifest.json">
+
+  <!-- Жесткое скрытие всех плашек и скриптов Netlify -->
+  <style>
+    [data-netlify-drawer],
+    #netlify-identity-widget,
+    iframe[src*="netlify"],
+    .netlify-drawer-frame,
+    net-lify-drawer {
+      display: none !important;
+      visibility: hidden !important;
+      opacity: 0 !important;
+      pointer-events: none !important;
+    }
+  </style>
 </head>
 
-<body style="background-color: #0D0D11;">
+<body style="background-color: #0D0D11;" data-netlify-header="false">
   <script src="flutter_bootstrap.js" async></script>
 </body>
 
