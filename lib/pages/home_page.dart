@@ -98,6 +98,9 @@ class InteractiveCard extends StatefulWidget {
 
 class _InteractiveCardState extends State<InteractiveCard> {
   bool isHovered = false;
+  bool isPressed = false;
+
+  bool get isActive => isHovered || isPressed;
 
   @override
   Widget build(BuildContext context) {
@@ -108,26 +111,29 @@ class _InteractiveCardState extends State<InteractiveCard> {
       onExit: (_) => setState(() => isHovered = false),
       cursor: SystemMouseCursors.click,
       child: GestureDetector(
+        onTapDown: (_) => setState(() => isPressed = true),
+        onTapUp: (_) => setState(() => isPressed = false),
+        onTapCancel: () => setState(() => isPressed = false),
         onTap: () => context.go(widget.route),
         child: AnimatedContainer(
           duration: const Duration(milliseconds: 200),
           width: 280,
           height: 360,
           padding: const EdgeInsets.all(24),
-          transform: isHovered
-              ? (Matrix4.identity()..translate(0, -10, 0))
+          transform: isActive
+              ? (Matrix4.identity()..translate(0.0, -10.0, 0.0))
               : Matrix4.identity(),
           decoration: BoxDecoration(
             color: const Color(0xFF1A1A24),
             borderRadius: BorderRadius.circular(20),
             border: Border.all(
-              color: isHovered ? widget.color : Colors.white10,
+              color: isActive ? widget.color : Colors.white10,
               width: 2,
             ),
-            boxShadow: isHovered
+            boxShadow: isActive
                 ? [
                     BoxShadow(
-                      color: widget.color.withValues(alpha: .3),
+                      color: widget.color.withValues(alpha: 0.3),
                       blurRadius: 30,
                       spreadRadius: 2,
                     ),
@@ -157,7 +163,7 @@ class _InteractiveCardState extends State<InteractiveCard> {
               const SizedBox(height: 24),
               AnimatedOpacity(
                 duration: const Duration(milliseconds: 200),
-                opacity: isHovered ? 1.0 : 0.4,
+                opacity: isActive ? 1.0 : 0.4,
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
