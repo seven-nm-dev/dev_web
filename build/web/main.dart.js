@@ -44030,7 +44030,7 @@ case 1:return A.N(p.at(-1),r)}})
 return A.P($async$pE,r)},
 L(a){return new A.kf($.axr(),new A.akS(this),null,null,t.x_)},
 MY(a,b,c,d,e){var s=null
-return A.cH(A.ew(A.de(b,e,s,22),A.a0(c,s,s,s,A.bZ().$3$color$fontSize$fontWeight(e,14.5,B.H),s,s),d,A.e2(s,s,a,s,s,s,0,s,s,s,s,s,s,s,new A.bw(A.az(16),B.m),s,s,s,s,s)),52,1/0)},
+return A.cH(A.ew(A.de(b,e,s,22),A.a0(c,s,s,s,A.bZ().$3$color$fontSize$fontWeight(e,14.5,B.H),s,s),d,A.e2(s,s,a,s,s,s,0,s,s,s,s,s,s,s,new A.bw(A.az(16),B.m),s,s,s,s,s)),52,350)},
 MX(a,b,c,d){return this.MY(a,b,c,d,B.f)}}
 A.akS.prototype={
 $3(a,a0,a1){var s,r,q,p,o,n,m,l,k,j,i=null,h=this.a,g=t.s,f=t.N,e=t.z,d=A.b([A.H(["title",h.cp("cat_ecommerce"),"icon",B.qn,"color",B.bd,"botName","FoodOrder_Bot","welcomeMsg",h.cp("msg_ecommerce"),"buttons",A.b([h.cp("btn_pizza"),h.cp("btn_burgers"),h.cp("btn_drinks"),h.cp("btn_cart")],g)],f,e),A.H(["title",h.cp("cat_booking"),"icon",B.KH,"color",B.bJ,"botName","ClinicBooking_Bot","welcomeMsg",h.cp("msg_booking"),"buttons",A.b([h.cp("btn_therapist"),h.cp("btn_dentist"),h.cp("btn_my_records")],g)],f,e),A.H(["title",h.cp("cat_crm"),"icon",B.KL,"color",B.w,"botName","Support24_Bot","welcomeMsg",h.cp("msg_crm"),"buttons",A.b([h.cp("btn_faq"),h.cp("btn_operator"),h.cp("btn_status")],g)],f,e),A.H(["title",h.cp("cat_ai"),"icon",B.lR,"color",B.c0,"botName","AiAssistant_Bot","welcomeMsg",h.cp("msg_ai"),"buttons",A.b([h.cp("btn_write_post"),h.cp("btn_data_analysis"),h.cp("btn_ai_settings")],g)],f,e),A.H(["title",h.cp("cat_courses"),"icon",B.lY,"color",B.dL,"botName","Academy_Bot","welcomeMsg",h.cp("msg_courses"),"buttons",A.b([h.cp("btn_lesson_1"),h.cp("btn_materials"),h.cp("btn_certificate")],g)],f,e)],t.H7),c=d[h.d],b=c.h(0,"color")
@@ -44448,7 +44448,7 @@ l=A.b([new A.bb(1,B.M,B.w.c_(0.12),B.h,25)],t.V)
 k=A.az(30)
 j=h.d
 i=h.e
-return A.nG(r,B.cZ,A.ik(A.bs(A.b([f,B.bx,q,B.aE,o,B.b6,A.bf(g,A.ay_(k,A.bf(g,A.a_H(new A.iT(h.a6O(j,e),new A.cp(""+j+i,t.kK)),B.l6,A.awB(),B.Q,A.awC()),B.n,B.bU,g,g,g,g,g,g,g,g,g),B.cy),B.n,g,g,new A.aY(B.aI,g,m,n,l,g,B.A),g,540,g,B.ek,g,g,290),B.d9,A.cH(A.ew(B.Lh,A.a0(e.h(0,"contactDev"),g,g,g,B.Cy,g,g),new A.aq1(h),A.e2(g,g,B.cB,g,g,g,4,g,g,g,g,g,g,g,new A.bw(A.az(25),B.m),g,g,g,g,g)),48,1/0),B.aE,A.cH(A.ew(B.L5,A.a0(e.h(0,"writeWhatsapp"),g,g,g,B.Cy,g,g),new A.aq2(h),A.e2(g,g,B.c8,g,g,g,4,g,g,g,g,g,g,g,new A.bw(A.az(25),B.m),g,g,g,g,g)),48,1/0),B.aE,A.cH(A.ew(B.Lc,A.a0(e.h(0,"openCalc"),g,g,g,A.bZ().$3$color$fontSize$fontWeight(B.l,14,B.H),g,g),new A.aq3(a),A.e2(g,g,B.w,g,g,g,g,g,g,g,g,g,g,g,new A.bw(A.az(25),B.m),g,g,g,g,g)),50,1/0),B.VF],p),B.u,g,B.o,B.r),B.Ja,g))},
+return A.nG(r,B.cZ,A.ik(A.bs(A.b([f,B.bx,q,B.aE,o,B.b6,A.bf(g,A.ay_(k,A.bf(g,A.a_H(new A.iT(h.a6O(j,e),new A.cp(""+j+i,t.kK)),B.l6,A.awB(),B.Q,A.awC()),B.n,B.bU,g,g,g,g,g,g,g,g,g),B.cy),B.n,g,g,new A.aY(B.aI,g,m,n,l,g,B.A),g,540,g,B.ek,g,g,290),B.d9,A.cH(A.ew(B.Lh,A.a0(e.h(0,"contactDev"),g,g,g,B.Cy,g,g),new A.aq1(h),A.e2(g,g,B.cB,g,g,g,4,g,g,g,g,g,g,g,new A.bw(A.az(25),B.m),g,g,g,g,g)),48,360),B.aE,A.cH(A.ew(B.L5,A.a0(e.h(0,"writeWhatsapp"),g,g,g,B.Cy,g,g),new A.aq2(h),A.e2(g,g,B.c8,g,g,g,4,g,g,g,g,g,g,g,new A.bw(A.az(25),B.m),g,g,g,g,g)),48,360),B.aE,A.cH(A.ew(B.Lc,A.a0(e.h(0,"openCalc"),g,g,g,A.bZ().$3$color$fontSize$fontWeight(B.l,14,B.H),g,g),new A.aq3(a),A.e2(g,g,B.w,g,g,g,g,g,g,g,g,g,g,g,new A.bw(A.az(25),B.m),g,g,g,g,g)),50,360),B.VF],p),B.u,g,B.o,B.r),B.Ja,g))},
 a6O(a,b){var s,r,q,p,o,n,m,l=this,k="title",j=null,i="education",h=b.h(0,"demoContent")
 switch(a){case 0:s=J.bd(h)
 r=t.p
