@@ -391,7 +391,7 @@ class _MobilePageState extends State<MobilePage> {
 
             // === 1. TELEGRAM ===
             SizedBox(
-              width: double.infinity,
+              width: 360,
               height: 48,
               child: ElevatedButton.icon(
                 onPressed: () => _launchURL('https://t.me/996551771108'),
@@ -410,6 +410,7 @@ class _MobilePageState extends State<MobilePage> {
                     borderRadius: BorderRadius.circular(25),
                   ),
                   elevation: 4,
+                  
                 ),
               ),
             ),
@@ -418,7 +419,7 @@ class _MobilePageState extends State<MobilePage> {
 
             // === 2. WHATSAPP ===
             SizedBox(
-              width: double.infinity,
+              width: 360,
               height: 48,
               child: ElevatedButton.icon(
                 onPressed: () => _launchURL('https://wa.me/996551771108'),
@@ -449,7 +450,7 @@ class _MobilePageState extends State<MobilePage> {
 
             // === 3. КАЛЬКУЛЯТОР ===
             SizedBox(
-              width: double.infinity,
+              width: 360,
               height: 50,
               child: ElevatedButton.icon(
                 onPressed: () {

@@ -707,7 +707,7 @@ class _BotPageState extends State<BotPage> {
     Color textColor = Colors.white,
   }) {
     return SizedBox(
-      width: double.infinity,
+      width: 350,
       height: 52,
       child: ElevatedButton.icon(
         onPressed: onTap,
